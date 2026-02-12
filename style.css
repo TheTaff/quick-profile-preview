@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Стили формы */
+.controls {
+    background: #f0f2f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    width: 320px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e0e5ec;
+    box-shadow: inset 4px 4px 8px #bec3c9, inset -4px -4px 8px #ffffff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+/* Стили карточки */
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.card-header {
+    height: 100px;
+    background: linear-gradient(45deg, #4a90e2, #9013fe);
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.avatar-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #eee;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-body p {
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    border: 2px solid #4a90e2;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #4a90e2;
+    color: white;
+}
+
+/* Темная тема для карточки */
+.card.dark {
+    background: #2d3436;
+}
+.card.dark h1 { color: white; }
+.card.dark p { color: #dfe6e9; }

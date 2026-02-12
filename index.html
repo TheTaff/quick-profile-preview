@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCard Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="controls">
+            <h2>Настрой карту</h2>
+            <div class="input-group">
+                <label>Имя</label>
+                <input type="text" id="nameInput" placeholder="Напр. Иван Иванов" maxlength="20">
+            </div>
+            <div class="input-group">
+                <label>Профессия</label>
+                <input type="text" id="jobInput" placeholder="Напр. Frontend Developer" maxlength="25">
+            </div>
+            <div class="input-group">
+                <label>GitHub Username</label>
+                <input type="text" id="githubInput" placeholder="Твой ник на GitHub">
+            </div>
+            <button id="themeBtn">Сменить тему</button>
+        </section>
+
+        <div class="card" id="card">
+            <div class="card-header"></div>
+            <div class="avatar-container">
+                <img src="https://ih1.redbubble.net/image.4515359424.1220/st,small,507x507-pad,600x600,f8f8f8.jpg" id="avatar" alt="Avatar">
+            </div>
+            <div class="card-body">
+                <h1 id="cardName">Твое Имя</h1>
+                <p id="cardJob">Junior Web Developer</p>
+                <div class="socials">
+                    <a href="#" id="cardGithub" target="_blank">View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
